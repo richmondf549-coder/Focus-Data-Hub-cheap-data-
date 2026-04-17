@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Focus Data Hub</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="sidebar">
+    <h2>Focus Data Hub</h2>
+    <p>Wallet</p>
+    <h3 id="balance">GHS 0</h3>
+
+    <button onclick="quickBuy('MTN',5)">Buy 1GB MTN</button>
+    <button onclick="quickBuy('Telecel',4.5)">Buy 1GB Telecel</button>
+  </div>
+
+  <div class="chat-area">
+    <div class="header">
+      <span>Data Assistant</span>
+      <span id="userName">User</span>
+    </div>
+
+    <div id="chat" class="chat"></div>
+
+    <div class="input-area">
+      <input id="input" placeholder="Buy 1GB MTN 024xxxxxxx">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
